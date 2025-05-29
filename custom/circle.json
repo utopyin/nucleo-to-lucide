@@ -1,0 +1,7 @@
+{
+	"$schema": "../icon.schema.json",
+	"contributors": ["utopyin"],
+	"tags": ["circle", "shape"],
+	"categories": ["ui", "layout"],
+	"aliases": []
+}
