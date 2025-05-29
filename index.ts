@@ -74,6 +74,8 @@ for (const icon of iconsMap.values()) {
 		"<svg ",
 		`<svg width="${icon.grid}" height="${icon.grid}" fill="currentColor" `,
 	);
+	svg = svg.replaceAll('fill="#000"', "");
+	svg = svg.replaceAll('fill="black"', "");
 	svgDestinationFile.write(svg);
 
 	jsonDestinationFile.write(
