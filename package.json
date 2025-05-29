@@ -1,0 +1,18 @@
+{
+	"name": "nucleo-to-lucide",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"scripts": {
+		"start": "bun run index.ts"
+	},
+	"dependencies": {
+		"del": "^8.0.0"
+	}
+}
