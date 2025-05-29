@@ -1,0 +1,7 @@
+{
+	"$schema": "../icon.schema.json",
+	"contributors": ["utopyin"],
+	"tags": ["loading", "progress", "wait", "spinner", "loader"],
+	"categories": ["ui", "layout"],
+	"aliases": ["loader2"]
+}

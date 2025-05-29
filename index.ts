@@ -67,7 +67,15 @@ for (const icon of iconsMap.values()) {
 	const svgDestinationFile = Bun.file(`${destinationPath}.svg`);
 	const jsonDestinationFile = Bun.file(`${destinationPath}.json`);
 
-	svgDestinationFile.write(svgSourceFile);
+	let svg = await svgSourceFile.text();
+	svg = svg.replace('<g class="nc-icon-wrapper">', "");
+	svg = svg.replace("</g>", "");
+	svg = svg.replace(
+		"<svg ",
+		`<svg width="${icon.grid}" height="${icon.grid}" fill="currentColor" `,
+	);
+	svgDestinationFile.write(svg);
+
 	jsonDestinationFile.write(
 		JSON.stringify(
 			{
